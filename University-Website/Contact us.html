@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt="Univercity-logo"></a>
+            <div class="nav-link" id="navlink">
+                <span class="material-icons" onclick="hidemenu()">close</span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About us.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-icons" onclick="showmenu()">menu</span>
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- ---------- location --------- -->
+
+    <section class="loction">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14806.144716179915!2d82.14720534364254!3d21.91392958685871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2876e38142b593%3A0x8b064431a54ba052!2sJhal%2C%20Chhattisgarh%20495224!5e0!3m2!1sen!2sin!4v1773032875760!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <!-- ------- contact us --------- -->
+    <section class="contact-us">
+        <div class="row">
+
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Xyx Road, ABC Building</h5>
+                        <p>Jhal Bilaspur</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 9320940923</h5>
+                        <p> Monday to Friday 10:00 AM to 06:00 PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>info@mayankkaushik.com</h5>
+                        <p>Email Your Questions</p>
+                    </span>
+                </div>
+            </div>
+        <div class="contact-col comment-box">
+            <form action=""class="comment-form">
+                <input type="text" placeholder="Enter Your name" required>
+                <input type="email" placeholder="Enter Your eamil" required>
+                <input type="text" placeholder="Enter Your subject" required>
+                <textarea rows="8" placeholder="Your Massage" required></textarea>
+                <button type="submit" class="box-in cta-btn red-btn">Send Massage</button>
+            </form>
+        </div>   
+        </div>
+    </section>
+
+
+
+
+    <!-- ------ foter ------ -->
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. quo earum nesciunt <br>veritatis hic quam
+            reiciendis aut.</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Mayank</p>
+    </section>
+
+    <!-- -----javascript for the menu toggle ------>
+
+    <script>
+        const navlink = document.getElementById("navlink");
+        function showmenu() {
+            navlink.style.right = "0";
+        }
+        function hidemenu() {
+            navlink.style.right = "-300px";
+        }
+    </script>
+</body>
+
+</html>
